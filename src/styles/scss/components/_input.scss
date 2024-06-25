@@ -1,0 +1,24 @@
+.input {
+    background: none;
+    border: none;
+    &--contact {
+        color: $text-gray;
+        font-weight: 400;
+        padding: 0;
+        width: 100%;
+
+        &:focus-visible {
+            color: $text-light;
+        }
+
+        &-message {
+            height: 113px;
+            overflow: auto;
+            resize: none;
+        }
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+}

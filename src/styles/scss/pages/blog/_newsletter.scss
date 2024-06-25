@@ -1,0 +1,248 @@
+.newsletter {
+  background: $newsletter-background;
+
+  margin-bottom: 100px;
+
+  &__wrapper {
+    display: flex;
+    gap: 24px;
+    padding: 50px 0;
+  }
+
+  &__info {
+    max-width: 636px;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    color: $white;
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 0;
+  }
+
+  &__form {
+    width: 100%;
+
+    &-label {
+      color: $white;
+      display: block;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+
+    &-block {
+      display: flex;
+      margin-bottom: 35px;
+      position: relative;
+
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+
+    &-email {
+      all: unset;
+      background: $dark-blue;
+      color: $white;
+      margin-right: 24px;
+      max-width: 306px;
+      padding: 14px 25px;
+      width: 100%;
+
+      &::placeholder {
+        color: $text-gray;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+
+      &:focus {
+        border: 1px solid $br-dark;
+      }
+    }
+
+    &-check {
+      display: none;
+    }
+  }
+
+  &__labelcheck {
+    color: $white;
+    font-size: 16px;
+    position: relative;
+
+    &::before {
+      background-color: transparent;
+      border: 1px solid $turquoise;
+      content: "";
+      cursor: pointer;
+      display: inline-block;
+      height: 20px;
+      margin-right: 10px;
+      padding: 0;
+      position: relative;
+      vertical-align: top;
+      width: 20px;
+    }
+
+    &-link {
+      color: $white;
+      text-decoration: underline;
+    }
+
+    &-link:hover {
+      color: $text-gray;
+    }
+  }
+
+  &__form-check:checked + &__labelcheck::after {
+    border: solid $turquoise;
+    border-width: 0 2px 2px 0;
+    content: "";
+    display: block;
+    height: 11px;
+    left: 8px;
+    position: absolute;
+    top: 4px;
+    transform: rotate(45deg);
+    width: 5px;
+  }
+
+  &__button {
+    background-color: $gray;
+    border: none;
+    color: $white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 196px;
+    padding: 14px 25px;
+    width: 100%;
+  }
+
+  &__error {
+    color: $light-red;
+    font-size: 16px;
+    font-weight: 400;
+    left: 0;
+    position: absolute;
+    text-transform: none;
+    top: 104%;
+  }
+
+  @include media-breakpoint-down(xxl) {
+    &__button {
+      max-width: 166px;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    &__button {
+      max-width: 146px;
+    }
+
+    &__form {
+      &-email {
+        font-size: 14px;
+        max-width: 237px;
+        padding: 12px;
+      }
+
+      &-label {
+        line-height: 1.2;
+      }
+    }
+
+    &__labelcheck {
+      font-size: 15px;
+
+      &-link {
+        font-size: 15px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    &__wrapper {
+      gap: 7.5px;
+    }
+
+    &__button {
+      max-width: 116px;
+    }
+
+    &__form {
+      &-email {
+        margin-right: 14px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 50px;
+
+    &__wrapper {
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    &__title {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    &__button {
+      max-width: 140px;
+    }
+
+    &__description {
+      font-size: 24px;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    &__form {
+      &-label {
+        text-align: center;
+      }
+
+      &-email {
+        max-width: 100%;
+      }
+
+      &-block:last-child {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__labelcheck {
+      font-size: 14px;
+
+      &-link {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__button {
+      max-width: 100px;
+      padding-inline: 10px;
+    }
+  }
+}

@@ -1,0 +1,283 @@
+.card {
+  padding: 40px 50px;
+  &--stack {
+    background: $bg-conic-gradient;
+    box-shadow: $box-shadow;
+    padding: 30px 24px;
+    width: 368px;
+    &__content {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      height: 100%;
+    }
+
+    &__title {
+      color: $gainsboro;
+    }
+
+    &__subtitle {
+      color: $text-light;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    &__skills {
+      color: $text-light;
+    }
+
+    &__text {
+      border-bottom: 2px solid $bg-primary-subtle;
+      color: $text-light;
+      font-size: 14px;
+      line-height: 18px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  &--review {
+    background: $bg-light;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+
+    &__contact {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__description {
+      font-weight: 400;
+    }
+
+    &__author {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &__qualifications {
+      align-items: center;
+      display: flex;
+      gap: 12px;
+    }
+
+    &__stars {
+      height: auto;
+      width: 119px;
+    }
+  }
+
+  &--blog {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    max-width: 636px;
+    padding: 0;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    &__date {
+      color: $text-primary;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &__title {
+      font-weight: 700;
+      margin: 0;
+    }
+
+    &__text {
+      letter-spacing: -0.1px;
+      margin: 0;
+    }
+
+    &__link {
+      color: $text-secondary;
+      font-size: 18px;
+    }
+  }
+
+  &--staff {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 24px;
+    max-width: 306px;
+    padding: 0;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__image {
+      height: auto;
+      margin-bottom: 40px;
+      max-width: 306px;
+      width: 100%;
+    }
+
+    &__name {
+      color: $text-dark-secondary;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    &__position {
+      color: $text-dark-secondary;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    &__icon {
+      color: $text-blue;
+      font-size: 32px;
+    }
+  }
+
+  &--industry {
+    border: none;
+    padding: 0;
+
+    &__head {
+      align-items: baseline;
+      display: flex;
+    }
+
+    &__link {
+      margin-bottom: 25px;
+    }
+
+    &__image {
+      height: auto;
+      width: 100%;
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__author,
+    &__date,
+    &__point {
+      color: $title-blue;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 27px;
+    }
+
+    &__title {
+      color: $text-dark;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+      text-decoration: none;
+    }
+
+    &__text {
+      color: $title-blue;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0;
+    }
+
+    &__tags {
+      display: flex;
+      gap: 14px;
+    }
+
+    &__tag {
+      border: 1px solid;
+      border-radius: 12px;
+      color: $text-dark;
+      font-size: 12px;
+      font-weight: 400;
+      padding: 3px 7px;
+    }
+  }
+
+  @include media-breakpoint-down(xxl) {
+    &--industry {
+      &__author,
+      &__date,
+      &__point,
+      &__title {
+        font-size: 16px;
+      }
+
+      &__text {
+        font-size: 13.4px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    &--industry {
+      &__text {
+        font-size: 13px;
+      }
+
+      &__link {
+        margin-bottom: 18px;
+      }
+
+      &__head {
+        gap: 10px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    &--industry {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &--industry {
+      &__text {
+        font-size: 16px;
+      }
+
+      &__tag {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &--staff {
+      margin-bottom: 50px;
+      &__name {
+        font-size: 20px;
+      }
+
+      &__image {
+        margin-bottom: 20px;
+      }
+    }
+
+    &--industry {
+      margin-bottom: 0;
+
+      &__title {
+        font-size: 20px;
+      }
+    }
+  }
+}

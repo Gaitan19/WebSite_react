@@ -1,0 +1,9 @@
+.container {
+  max-width: 1311px;
+  padding: 0;
+
+  @include media-breakpoint-down(xxl) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}

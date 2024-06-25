@@ -1,0 +1,39 @@
+.header {
+  box-shadow: $box-shadow-dark;
+  padding: 21px 0;
+
+  &__nav {
+    align-items: center;
+    display: flex;
+  }
+
+  @include media-breakpoint-down(lg) {
+    &__logo {
+      height: auto;
+      margin: auto;
+      width: 152px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    position: relative;
+    &__nav {
+      width: 100%;
+    }
+
+    &--body-hidden {
+      overflow: hidden;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__logo {
+      width: 208px;
+    }
+  }
+}

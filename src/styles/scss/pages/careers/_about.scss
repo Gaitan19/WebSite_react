@@ -1,0 +1,66 @@
+.careers__about {
+  margin-bottom: 0;
+
+  &-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 50px;
+  }
+
+  &-description,
+  &-competencies,
+  &-responsibilities {
+    color: $blue;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+    max-width: 1296px;
+  }
+
+  @include media-breakpoint-down(xxl) {
+    &-title {
+      line-height: 52.5px;
+    }
+
+    &-description {
+      font-size: 16.8px;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    &-title {
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &-description,
+    &-competencies,
+    &-responsibilities {
+      font-size: 16px;
+      line-height: normal;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &-title {
+      font-size: 25px;
+      line-height: 32px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    &-description,
+    &-competencies,
+    &-responsibilities {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 36px;
+      text-align: left;
+    }
+  }
+}

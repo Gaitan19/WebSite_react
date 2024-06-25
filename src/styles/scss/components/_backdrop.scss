@@ -1,0 +1,51 @@
+.backdrop {
+  background-size: cover;
+  width: 100%;
+
+  &--hero {
+    background-image: url("/bg-hero2.png");
+    background-position: 0 42%;
+    height: calc(100vh - 93px);
+
+    position: relative;
+    &::before {
+      background: $bg-liner-gradient;
+      content: "";
+      height: 100%;
+      left: 0;
+      opacity: 80%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    & .container {
+      height: 100%;
+    }
+
+    &-blogs {
+      background-image: url("/blog_hero.png");
+
+      &::before {
+        background: $blog-background;
+        opacity: initial;
+      }
+
+      @include media-breakpoint-down(sm) {
+        background-position: 15% 42%;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &--hero {
+      min-height: 674px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    &--hero {
+      height: 100%;
+    }
+  }
+}

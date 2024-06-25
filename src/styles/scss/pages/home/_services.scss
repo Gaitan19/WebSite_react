@@ -1,0 +1,275 @@
+.services {
+  margin-bottom: 100px;
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__subtitle {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    & img {
+      height: auto;
+      max-width: 342px;
+      width: 100%;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    &__title {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    margin-bottom: 36px;
+    min-height: 180px;
+    text-align: start;
+  }
+
+  @include media-breakpoint-down(xxl) {
+    &__description {
+      font-size: 18.7px;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    &__content {
+      margin-bottom: 100px;
+    }
+
+    &__text {
+      max-width: 829px;
+    }
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    &__subtitle {
+      font-size: 33px;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+
+    &__images {
+      max-width: 341px;
+      width: 100%;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    &__bottom {
+      gap: 60px;
+    }
+
+    &__item {
+      height: fit-content;
+
+      &__title {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+    }
+
+    &__icon {
+      height: 77px;
+      margin-bottom: 1.8229166667vw;
+      width: 77px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 25px;
+      margin-bottom: 50px;
+      max-width: 559px;
+      min-height: 162px;
+    }
+
+    .button--dark {
+      font-size: 19px;
+      height: 49px;
+      line-height: 49px;
+      margin: 0 auto;
+
+      padding: 0;
+      text-align: center;
+      width: 214px;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    &__text p {
+      font-size: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    &__content {
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+    &__text {
+      margin-bottom: 30px;
+      max-width: 100%;
+      text-align: center;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__bottom {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle {
+      width: 100%;
+    }
+
+    &__images {
+      max-width: 100%;
+      text-align: center;
+
+      img {
+        max-width: 415px;
+      }
+    }
+
+    &__bottom {
+      gap: 50px;
+    }
+
+    &__icon {
+      height: 90px;
+      width: 90px;
+    }
+
+    &__item {
+      width: 100%;
+
+      &__title {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__description {
+      margin-bottom: 30px;
+      max-width: 627px;
+      min-height: auto;
+      text-align: center;
+      width: 100%;
+    }
+
+    .button--dark {
+      font-size: 18px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 50px;
+
+    &__content {
+      margin-bottom: 50px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 100px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 25px;
+    }
+
+    &__subtitle {
+      font-size: 25px;
+      line-height: 32px;
+      margin-bottom: 25px;
+    }
+
+    &__text {
+      margin-bottom: 50px;
+
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0;
+        text-align: center;
+      }
+    }
+
+    &__images img {
+      height: 220px;
+      max-width: none;
+      object-fit: cover;
+      width: 307px;
+    }
+
+    &__content {
+      margin-bottom: 30px;
+    }
+
+    &__icon {
+      height: 78px;
+      margin-bottom: 24px;
+      width: 78px;
+    }
+
+    &__bottom {
+      gap: 24px;
+    }
+
+    &__item__title {
+      font-size: 30px;
+      line-height: 45px;
+      margin-bottom: 36px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 36px;
+      text-align: left;
+    }
+
+    .button--dark {
+      font-size: 20px;
+      height: 54px;
+      line-height: 30px;
+      width: 224px;
+    }
+  }
+}

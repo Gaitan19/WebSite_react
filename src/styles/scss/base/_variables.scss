@@ -1,0 +1,107 @@
+//fonts
+$font-primary: "Open Sans", sans-serif;
+
+//colors
+$red: #ff0000;
+$light-red: #f37b7b;
+$white: #ffffff;
+$blue: #1c243e;
+$blue-royal: #4472c4;
+$dark-shade: rgba(0, 0, 0, 0.25);
+$dark-blue: #050d26;
+$midnight-blue: #192139;
+$dark-slate-blue: rgba(25, 33, 57, 0);
+$gray: #3d455c;
+$light-blue: #0a66c2;
+$light-gray: #f5f5f5;
+$light-sea-green: rgba(0, 175, 169, 0.3);
+$dark-gray: #212529;
+$gainsboro: #cecece;
+$black: #00071e;
+$black-secondary: #000;
+$orange: #f89b27;
+$silver: #c9c9c9;
+$silver-foil: #afafaf;
+$turquoise: #00afa9;
+$dark-shadow: rgba(0, 0, 0, 0.3);
+$black-shadow: #00000040;
+$navy-dark: rgba(0, 7, 30, 0.6);
+$navy-blue: rgba(0, 7, 30, 0.25);
+$soft-gray: hsla(0, 0%, 69%, 0.26);
+$soft-gray-secondary: hsla(0, 0%, 69%, 0.85);
+$soft-silver: #b0b0b0;
+$gray-dark-slate: #1c243ebe;
+
+// title-colors
+$title-blue: $blue;
+
+//text-colors
+
+$text-primary: $dark-gray;
+$text-secondary: $orange;
+$text-light: $white;
+$text-dark: $black;
+$text-dark-secondary: $black-secondary;
+$text-emphasis: $light-sea-green;
+$text-gray: $silver-foil;
+$text-silver: $silver;
+$text-blue: $light-blue;
+
+//background-colors
+
+$bg-primary: $blue;
+$bg-primary-subtle: $gray;
+$bg-secondary: $orange;
+$bg-light: $light-gray;
+$bg-dark: $dark-blue;
+$bg-liner-gradient: linear-gradient(76deg, $black 60.21%, $blue 74.25%);
+$bg-conic-gradient: conic-gradient(
+  from 45deg at 50% 50%,
+  $midnight-blue 0deg,
+  $dark-slate-blue 360deg
+);
+
+// header
+$bg-header: $white;
+
+//shadow
+$box-shadow: 4px 3px 10px 0px $dark-shade;
+$box-shadow-dark: 0px 4px 4px 0px $black-shadow;
+$box-shadow-blue: 0 4px 4px 0 $navy-blue;
+
+//border
+
+$br-circle-light: $gainsboro;
+$br-light: $white;
+$br-dark: $silver-foil;
+$br-dark-secondary: $gray;
+
+// about us
+$about-text: $blue;
+
+// hero augmentation
+$hero-image-augmentation: "/map.png";
+$hero-point-augmentation: $turquoise;
+$hero-shadow-augmentation: $dark-shadow;
+
+// tecnologies augmentation
+$technologies-text: $blue;
+
+// outstanding augmentation
+$bg-reactangle: $turquoise;
+
+// blog
+
+$blog-background: linear-gradient(
+  72.93deg,
+  $black 19.46%,
+  $navy-dark 72.95%,
+  $blue 100%
+);
+
+// newsletter
+
+$newsletter-background: linear-gradient(88.57deg, $black 0%, $blue 100%);
+
+// careersDetails
+$careersDetails-icons-text: $gray-dark-slate;

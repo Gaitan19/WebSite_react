@@ -1,0 +1,71 @@
+.button {
+  background: $bg-secondary;
+  border: none;
+  color: $text-light;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  line-height: 24px;
+  padding: 12px 20px;
+
+  &--toggle {
+    background: none;
+    color: $text-dark;
+    display: none;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  &--light {
+    background: none;
+    border: 1px solid $white;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: normal;
+    padding: 8px 26px;
+  }
+
+  &--dark {
+    background: $bg-primary;
+    font-size: 20px;
+    letter-spacing: normal;
+    line-height: 30px;
+    padding: 12px 54px;
+  }
+
+  &--gray {
+    background: $bg-primary-subtle;
+    font-weight: 400;
+    padding: 14px 25px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    &--navbar {
+      align-items: center;
+      display: flex;
+      font-size: 14px;
+      height: 51px;
+      justify-content: center;
+      letter-spacing: 2px;
+      padding: 0;
+      width: 260px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    letter-spacing: 0;
+    width: 142px;
+  }
+
+  @include media-breakpoint-down(md) {
+    &--navbar {
+      display: none;
+    }
+
+    &--toggle {
+      display: block;
+      max-width: 20px;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.reviews {
+  &--about {
+    margin-bottom: 100px;
+  }
+
+  &--about &__text {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  @include media-breakpoint-down(md) {
+    &--about {
+      margin-bottom: 50px;
+    }
+  }
+}

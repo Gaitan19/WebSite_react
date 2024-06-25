@@ -1,0 +1,135 @@
+.blogs {
+  &.second {
+    margin-bottom: 100px;
+  }
+
+  .card--industry.double {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    grid-column-end: 5;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-row-start: 2;
+    height: 100%;
+    margin-bottom: 0;
+
+    max-height: 428px;
+    max-width: none;
+    width: 100%;
+    .card--industry {
+      &__link {
+        margin-bottom: 0;
+        max-width: 636px;
+        width: 100%;
+      }
+
+      &__image {
+        height: 100%;
+      }
+
+      &__informations {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 49px;
+        padding-top: 49px;
+        width: 100%;
+      }
+
+      &__description {
+        gap: 0;
+        max-width: none;
+        max-width: 636px;
+      }
+
+      &__information,
+      &__title,
+      &__text {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xxl) {
+    .card--industry.double {
+      .card--industry {
+        &__informations {
+          gap: 0;
+          padding-bottom: 23px;
+          padding-top: 47px;
+        }
+
+        &__tags {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    &.second {
+      margin-bottom: 50px;
+    }
+
+    .card--industry.double {
+      grid-row-start: 3;
+      max-height: none;
+      .card--industry {
+        &__link {
+          width: 58.3%;
+        }
+
+        &__informations {
+          gap: 24px;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          width: 41.6%;
+        }
+
+        &__text {
+          margin-bottom: 10px;
+        }
+
+        &__title {
+          max-width: none;
+        }
+
+        &__tags {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .card--industry.double {
+      flex-direction: column;
+      gap: 25px;
+
+      .card--industry {
+        &__link {
+          max-width: none;
+          width: 100%;
+        }
+
+        &__informations {
+          gap: 24px;
+          max-width: none;
+          padding: 0;
+          width: 100%;
+        }
+
+        &__description {
+          max-width: none;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &.second {
+      margin-bottom: 100px;
+    }
+  }
+}

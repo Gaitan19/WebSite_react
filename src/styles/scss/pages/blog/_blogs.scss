@@ -1,0 +1,259 @@
+.blogs {
+  margin-bottom: 52px;
+
+  &__posts {
+    column-gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .card--industry {
+      margin-bottom: 50px;
+
+      &__arrow {
+        display: none;
+      }
+
+      &__description {
+        max-width: 306px;
+      }
+    }
+
+    &-right {
+      grid-column-end: 5;
+      grid-column-start: 3;
+    }
+
+    &-right .card--industry {
+      flex-direction: row;
+      gap: 24px;
+      margin-bottom: 24px;
+      max-height: 205px;
+      max-width: 636px;
+
+      &__title {
+        max-width: 305px;
+      }
+
+      &__text {
+        max-width: 305px;
+      }
+
+      &__description {
+        max-width: none;
+      }
+
+      &__link {
+        margin-bottom: 0;
+      }
+
+      &__image {
+        height: 100%;
+        max-width: 306px;
+      }
+    }
+  }
+
+  &__posts.block--first .card--industry {
+    &:nth-child(5) {
+      .card--industry__text {
+        max-width: 636px;
+      }
+
+      .card--industry__link {
+        height: 100%;
+        max-height: 428px;
+      }
+      .card--industry__image {
+        height: 100%;
+      }
+
+      .card--industry__description {
+        max-width: none;
+      }
+    }
+  }
+
+  .card--industry {
+    &__author,
+    &__date,
+    &__point {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &__title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    &__text {
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      font-size: 14px;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+
+    &:nth-child(5) {
+      grid-column-end: 1;
+      grid-column-start: 3;
+      grid-row-end: 4;
+      grid-row-start: 2;
+      max-width: none;
+    }
+  }
+
+  @include media-breakpoint-down(xxl) {
+    &__posts {
+      .card--industry {
+        &__title {
+          font-size: 14.4px;
+        }
+
+        &__text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    .card--industry {
+      max-width: none;
+
+      &__link {
+        margin-bottom: 25px;
+      }
+
+      &__title {
+        font-size: 16px;
+        margin-bottom: 12px;
+        max-width: 325px;
+      }
+
+      &__description,
+      &__text {
+        font-size: 14px;
+        max-width: none;
+      }
+
+      &__information {
+        margin-bottom: 12px;
+      }
+
+      &__description {
+        gap: 0;
+      }
+
+      &__text {
+        height: 80px;
+        margin-bottom: 10px;
+        max-width: none;
+      }
+
+      &:nth-child(odd) {
+        grid-column-end: 3;
+        grid-column-start: 1;
+      }
+
+      &:nth-child(even) {
+        grid-column-end: 5;
+        grid-column-start: 3;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        grid-row-start: 2;
+      }
+
+      &:nth-child(5) {
+        grid-column-end: 5;
+        grid-column-start: 1;
+        grid-row-end: 5;
+        grid-row-start: 3;
+        max-width: none;
+      }
+    }
+
+    &__posts.block--first .card--industry {
+      &:nth-child(5) {
+        .card--industry__title {
+          font-size: 18px;
+          max-width: none;
+        }
+
+        .card--industry__text {
+          font-size: 16px;
+          max-width: none;
+        }
+      }
+    }
+
+    &__posts-right {
+      grid-column-end: 1;
+      grid-column-start: 5;
+      grid-row-start: 5;
+
+      .card--industry {
+        max-height: none;
+        &__link {
+          height: auto;
+          margin-bottom: 0;
+          width: 60%;
+        }
+
+        &__description {
+          width: 40%;
+        }
+
+        &__image {
+          max-width: none;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &__posts {
+      display: flex;
+      flex-direction: column;
+
+      .card--industry {
+        width: 100%;
+
+        &__author,
+        &__date,
+        &__point {
+          font-size: 16px;
+        }
+
+        &__title {
+          font-size: 20px;
+          max-width: none;
+        }
+
+        &__text {
+          font-size: 16px;
+          height: auto;
+        }
+      }
+
+      &-right {
+        .card--industry {
+          flex-direction: column;
+          gap: 0;
+          margin-bottom: 50px;
+
+          &__link {
+            margin-bottom: 25px;
+            width: 100%;
+          }
+
+          &__description {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

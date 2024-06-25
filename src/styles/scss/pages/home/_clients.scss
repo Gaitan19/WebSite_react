@@ -1,0 +1,24 @@
+.clients {
+  margin-bottom: 100px;
+
+  &__image {
+    margin-right: 55px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 80px;
+
+    &__image {
+      height: 50px;
+      margin-right: 100px;
+      width: auto;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 100px;
+    &__image {
+      margin-right: 55px;
+    }
+  }
+}

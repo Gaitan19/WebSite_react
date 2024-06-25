@@ -1,0 +1,88 @@
+.leadership {
+  margin-bottom: 100px;
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__description {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    &__description {
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .card--staff {
+      max-width: 250px;
+
+      &__image {
+        margin-bottom: 20px;
+      }
+
+      &__name {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    &__description {
+      gap: 16px;
+    }
+
+    .card--staff {
+      max-width: 225px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 50px;
+
+    &__title,
+    &__subtitle {
+      text-align: center;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 100px;
+
+    &__description {
+      gap: 0;
+      margin-bottom: 0;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 50px;
+    }
+
+    &__subtitle {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 40px;
+    }
+
+    &__card:last-child {
+      .card {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
